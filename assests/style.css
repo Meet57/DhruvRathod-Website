@@ -1,3 +1,88 @@
-a{
+/* poppins and prata */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Prata&display=swap');
+
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Prata', serif;
+*/
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.prataSerif {
+    font-family: 'prata', serif;
+}
+
+.prata40 {
+    font-family: 'prata', serif;
+    font-size: 40;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.poppins600 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.poppins500 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.poppins300 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+a {
     text-decoration: none;
+}
+
+/* hover dark mode */
+.hoverdark-home {
+    background-position: center;
+    height: 300px;
+}
+
+.hoverdark-home:after {
+    content: '\A';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+}
+
+.hoverdark-home:hover:after {
+    opacity: 1;
+}
+
+.project-text {
+    z-index: 1;
+}
+
+#js-top {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+}
+
+#js-top:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
 }
