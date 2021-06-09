@@ -13,23 +13,10 @@
 
 <body>
 
-    <nav class="col-12 hidden" style="position: fixed;" id="sideNav">
-        <div class="dhuvrathodvertical m-2 m-md-5">
-            <a href="../">
-                <img src="../assests/dhruvrathod.svg" width="15">
-            </a>
-        </div>
-        <div class="workaboutlink m-2 m-md-5">
-            <img src="../assests/work.svg" width="15" alt="">
-            <br>
-            <br>
-            <img src="../assests/about.svg" width="15" alt="">
-        </div>
-    </nav>
     <main class="m-5 p-md-5 pt-md-3">
         <nav class="row justify-content-between navbar">
             <div class="col ms-md-3" style="opacity: 0.8;">Dhruv Rathod</div>
-            <div class="col d-flex flex-row-reverse me-md-3" style="opacity: 0.8;">
+            <div class="col d-flex flex-row-reverse ms-md-3" style="opacity: 0.8;">
                 <a href="#" class="ms-3">Work</a>
                 <a href="#" class="ms-3">About</a>
             </div>
@@ -96,38 +83,23 @@
             </div>
         </div>
     </div>
-
-
-    <div class="" onclick="topFunction()" id="js-top">
+    
+    
+    <div onclick="topFunction()" id="js-top">
         <img src="./assests/up-arrow.svg" height="30" alt="" />
     </div>
     <script>
         mybutton = document.getElementById("js-top");
-        sideNav = document.getElementById("sideNav");
-        // sideNav.classList.add("noneIMP")
 
         window.onscroll = function () {
             scrollFunction()
         };
 
         function scrollFunction() {
-            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                sideNav.classList.remove("hidden")
-                mybutton.classList.remove("hidden")
-                sideNav.classList.add("visible")
-                mybutton.classList.add("visible")
-                sideNav.classList.add("d-flex")
-                sideNav.classList.add("justify-content-between")
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
             } else {
-                sideNav.classList.remove("visible")
-                mybutton.classList.remove("visible")
-                sideNav.classList.add("hidden")
-                mybutton.classList.add("hidden")
-                setTimeout(() => {
-                    sideNav.classList.remove("d-flex")
-                    sideNav.classList.remove("justify-content-between")
-                }, 6000)
-
+                mybutton.style.display = "none";
             }
         }
 

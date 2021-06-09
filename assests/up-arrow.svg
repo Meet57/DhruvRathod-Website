@@ -1,4 +1,16 @@
-<svg width="197" height="195" viewBox="0 0 197 195" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="3.5" y="3.5" width="190" height="188" fill="white" stroke="black" stroke-width="7"/>
-<path d="M142.861 83.8253L102.805 43.7697C101.663 42.6272 100.139 42 98.4808 42C96.8555 42 95.3322 42.6272 94.1897 43.7697L54.1332 83.8253C51.767 86.1924 51.767 90.045 54.1332 92.4102L57.77 96.0489C58.9125 97.1905 60.4367 97.8186 62.0629 97.8186C63.6882 97.8186 65.2648 97.1905 66.4063 96.0489L89.8264 72.6793V146.924C89.8264 150.27 92.4471 153 95.7934 153H100.937C104.284 153 107.17 150.27 107.17 146.924V72.4158L130.722 96.0489C131.864 97.1905 133.347 97.8186 134.974 97.8186C136.6 97.8186 138.102 97.1905 139.245 96.0489L142.871 92.4102C145.238 90.044 145.229 86.1924 142.861 83.8253Z" fill="black" fill-opacity="0.6"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="16" height="16" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="up" transform="translate(-975 -362)">
+    <g id="Rectangle_130" data-name="Rectangle 130" transform="translate(975 362)" fill="none" stroke="#707070" stroke-width="2" opacity="0.418">
+      <rect width="40" height="40" stroke="none"/>
+      <rect x="1" y="1" width="38" height="38" fill="none"/>
+    </g>
+    <g id="Component_1" data-name="Component 1" transform="translate(987 374)" clip-path="url(#clip-path)">
+      <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H0V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(0 16) rotate(-90)" fill="#707070"/>
+    </g>
+  </g>
 </svg>
