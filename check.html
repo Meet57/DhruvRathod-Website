@@ -14,7 +14,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="col-12 hidden d-flex justify-content-between" style="position: fixed;" id="sideNav">
+    <nav class="col-12 hidden d-flex justify-content-between desktop-navigation" style="position: fixed;" id="sideNav">
         <div class="dhuvrathodvertical m-2 m-md-5">
             <a href="./">
                 <img src="./assests/dhruvrathod.svg" class="workaboutlink" width="13">
@@ -27,17 +27,18 @@
             <img src="./assests/about.svg" class="workaboutlink" width="13" alt="">
         </div>
     </nav>
-    <div class="m-5 p-md-5 pt-md-0 pb-md-0 mb-0 pb-0">
+    <div class="m-3 m-md-5 mb-md-0 p-md-5 pt-md-0 pb-md-0 mb-0 pb-0">
         <nav class="row justify-content-between navbar">
             <div style="cursor: pointer;" onclick="location.href='../';" class="col ms-md-3" style="opacity: 0.8;">Dhruv Rathod</div>
             <div class="col link-about d-flex flex-row-reverse me-md-3" style="opacity: 0.8;">
-                <a href="#" class="ms-3">Work</a>
-                <a href="#" class="ms-3">About</a>
+                <a href="#" class="ms-3 desktop-navigation">Work</a>
+                <a href="#" class="ms-3 desktop-navigation">About</a>
+                <img src="./assests/menu.svg" class="mobile-navigation" width="13">
             </div>
         </nav>
     </div>
     <!-- Ends Navigation -->
-    <main class="m-5 mt-0 p-md-5 pt-md-3 mt-md-0 mb-0 pb-0">
+    <main class="m-4 m-md-5 mb-md-0 mt-0 p-md-5 pt-md-3 mt-md-0 mb-0 pb-0">
         <div class="row heading-home mt-sm-3">
             <div class="prataSerif title-heading-home col-sm-7 h1 mt-5 m-md-3">
                 Risus commodo viverra maecenas accumsan
@@ -86,7 +87,7 @@
             </div>
         </div>
     </main>
-    <div class="footer mt-1 mx-4 px-1 mx-md-5 px-md-5">
+    <div class="footer mt-1 mx-3 px-1 mx-md-5 px-md-5">
         <div class="position-relative mx-3"
             style="background-image: url('https://images.unsplash.com/photo-1622069873046-39550b57c903?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max'); height: 200px;">
             <div class="text-footer-home pra h4 text-white position-absolute top-50 start-50 translate-middle">
@@ -102,7 +103,7 @@
     <script>
         mybutton = document.getElementById("js-top");
         sideNav = document.getElementById("sideNav");
-        // sideNav.classList.add("noneIMP")
+        mybutton.classList.add("hidden")
         scrolled = false;
 
         window.onscroll = function () {

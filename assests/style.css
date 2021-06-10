@@ -45,16 +45,17 @@ a {
 }
 
 /* hover dark mode */
-.project-text{
+.project-text {
     color: transparent;
 }
-.project-text:hover{
+
+.project-text:hover {
     color: white;
 }
 
 .hoverdark-home {
     background-position: center;
-    font-size:0;
+    font-size: 0;
 }
 
 .hoverdark-home:after {
@@ -87,52 +88,88 @@ a {
     cursor: pointer;
 }
 
-a{
+a {
     color: gray;
 }
 
-.workaboutlink{
+.workaboutlink {
     cursor: pointer;
     opacity: 0.8;
     transition: all 0.2s;
 }
 
-.workaboutlink:hover{
+.workaboutlink:hover {
     opacity: 1.0;
 }
 
-.link-about{
+.link-about {
     color: gray;
     transition: all 0.7s
 }
 
-.link-about :hover{
+.link-about :hover {
     color: black;
 }
 
-.hidden{
+.hidden {
     transition: opacity 0.3s ease-out;
     opacity: 0;
     /* display: none; */
 }
-.visible{
+
+.visible {
     transition: opacity 0.5s ease-in;
     opacity: 1;
     /* display: block; */
 }
 
-.noneIMP{
+.noneIMP {
     display: none !important;
 }
 
 @keyframes fadein {
-    0% { opacity: 0; }
-    50%   { opacity: 0.5; }
-    100%   { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeout {
-    0% { opacity: 1; }
-    50%   { opacity: 0.5; }
-    100%   { opacity: 0; }
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Mobile display */
+
+.mobile-navigation{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 500px) {
+    .row{
+        margin: 0;
+        padding: 0;
+    }
+    .desktop-navigation{
+        display: none !important;
+    }
+    .mobile-navigation{
+        visibility: visible;
+    }
 }
