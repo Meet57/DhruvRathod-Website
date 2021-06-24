@@ -223,3 +223,15 @@ a {
         visibility: visible;
     }
 }
+
+/* footer */
+
+.footer{
+    height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        height: 200px
+    }
+}
