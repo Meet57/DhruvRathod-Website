@@ -15,12 +15,13 @@
     <!-- Mobile Navigation -->
     <div class="mobile-navigation mobile-drawer" id="MobileNav">
         <div style="height:100%;width: 100%;position: absolute;">
-            <img src="./assests/close.svg" alt="" class="closeNav" onclick="closeNav()">
-            <a href="#" class="prataSerif h6 text-white" style="position: absolute; left: 40px; top:20px;">Dhruv
+            <img src="../assests/close.svg" alt="" class="closeNav" onclick="closeNav()">
+            <a href="../index.html" class="prataSerif h6 text-white"
+                style="position: absolute; left: 40px; top:20px;">Dhruv
                 Rathod</a>
-            <a href="./index.html" class="prataSerif text-white"
+            <a href="../index.html" class="prataSerif text-white"
                 style="position: absolute; left: 40px; top:30%; font-size:40px;">Work</a>
-            <a href="./About.html" class="prataSerif text-white"
+            <a href="../About.html" class="prataSerif text-white"
                 style="position: absolute; left: 40px; top:40%; font-size:40px;">About</a>
         </div>
     </div>
@@ -28,30 +29,32 @@
     <!-- Navigation -->
     <nav class="col-12 hidden d-flex justify-content-between desktop-navigation" style="position: fixed;" id="sideNav">
         <div class="dhuvrathodvertical m-2 m-md-5">
-            <a href="./">
-                <img src="./assests/dhruvrathod.svg" class="workaboutlink" width="13">
+            <a href="../index.html">
+                <img src="../assests/dhruvrathod.svg" class="workaboutlink" width="13">
             </a>
         </div>
         <div class="m-2 m-md-5">
-            <a href="./index.html">
-                <img src="./assests/work.svg" class="workaboutlink" width="13" alt="">
+            <a href="../index.html">
+                <img src="../assests/work.svg" class="workaboutlink" width="13" alt="">
             </a>
             <br>
             <br>
-            <a href="./About.html">
-                <img src="./assests/about.svg" class="workaboutlink" width="13" alt="">
+            <a href="../About.html">
+                <img src="../assests/about.svg" onclick="location.href='../About.html';" class="workaboutlink"
+                    width="13" alt="">
             </a>
         </div>
     </nav>
-    <div class="m-3 px-2 m-md-5 mb-md-0 p-md-5 pt-md-0 pb-md-0 mb-0 pb-0">
+    <div class="m-3 m-md-5 mb-md-0 p-md-5 pt-md-0 pb-md-0 mb-0 pb-0">
         <nav class="row justify-content-between navbar">
-            <a href="./index.html">
-                <div class="col ms-md-3" style="opacity: 0.8;">Dhruv Rathod</div>
-            </a>
+            <div style="cursor: pointer;" onclick="location.href='../index.html';" class="col ms-md-3"
+                style="opacity: 0.8;">
+                Dhruv Rathod
+            </div>
             <div class="col link-about d-flex flex-row-reverse me-md-3" style="opacity: 0.8;">
-                <a href="./index.html" class="ms-3 desktop-navigation">Work</a>
-                <a href="./About.html" class="ms-3 desktop-navigation">About</a>
-                <img src="./assests/menu.svg" onclick="openNavigation()" class="mobile-navigation" width="13">
+                <a href="../index.html" class="ms-3 desktop-navigation">Work</a>
+                <a href="../About.html" class="ms-3 desktop-navigation">About</a>
+                <img src="../assests/menu.svg" onclick="openNavigation()" class="mobile-navigation" width="13">
             </div>
         </nav>
     </div>
