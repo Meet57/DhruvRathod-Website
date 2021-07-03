@@ -117,6 +117,11 @@
                     <b class="poppins600" style="font-size:20px">
                         What can i do for your buisness?
                     </b>
+                    <div class="alert alert-danger d-flex align-items-center mt-3 visually-hidden" id="formerror" role="alert">
+                        <div>
+                            Server Error. Please Try again or Contact on above mentioned mobile number
+                        </div>
+                    </div>
                     <form action="./About.html" id="form" class="row">
                         <div class="col-md-6 mt-3">
                             <label for="name" class="form-label">Full Name*</label>
@@ -140,7 +145,7 @@
                             </div>
                             <div class="col-md-6 mt-3">
                                 <label for="help" class="form-label">How can i help you?</label>
-                                <textarea type="text" class="form-control h-75" name="help" id="help"
+                                <textarea type="text" class="form-control h-75" rows="5" name="help" id="help"
                                     autocomplete="off"></textarea>
                             </div>
                         </div>
@@ -152,6 +157,19 @@
             </div>
         </div>
     </main>
+
+    <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+        <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Dhruv Rathod</strong>
+                <small>Just Now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                We will reach you soon
+            </div>
+        </div>
+    </div>
     <!-- <div class="footer mt-1 mx-3 px-1 mx-md-5 px-md-5">
         <div class="position-relative mx-3"
             style="background-image: url('https://images.unsplash.com/photo-1622069873046-39550b57c903?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max'); height: 200px;">
@@ -166,7 +184,7 @@
             event.preventDefault();
             let formData = new FormData(event.target);
             html = ""
-            email = 'meet57.mp@gmail.com'
+            email = 'novar66369@herrain.com'
             subject = "From Website"
             for (let [name, value] of formData) {
                 html += `<tr><td><b> ${name} </b></td> : <td> ${value} </td> <br><tr>`
@@ -174,9 +192,32 @@
             var xhr = new XMLHttpRequest();
             xhr.open("POST", 'https://nodemailer57.herokuapp.com/', true);
             xhr.setRequestHeader('Content-Type', 'application/json');
-            xhr.send(JSON.stringify({email,subject,html}));
-            // console.log({email,subject,html});
-            form.reset();
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var option = {
+                        animate: true,
+                        delay: 2000
+                    }
+                    var toastele = document.getElementById('toast')
+                    toast = new bootstrap.Toast(toastele, option)
+                    toast.show()
+                    form.reset()
+                }
+                
+                if(this.status != 200){
+                    var formerror = document.getElementById('formerror')
+                    formerror.classList.remove('visually-hidden')
+                    setTimeout(() => {
+                        formerror.classList.add('visually-hidden')
+                    }, 10000);
+                }
+            }
+            xhr.send(JSON.stringify({
+                email,
+                subject,
+                html
+            }));
+
         }
         const form = document.querySelector('form');
         form.addEventListener('submit', handleSubmit);

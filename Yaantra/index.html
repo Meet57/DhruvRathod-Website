@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assests/style.css">
+
+    <style>
+
+    </style>
+
+    <title>Yaantra - Dhruv Rathod</title>
+</head>
+
+<body>
+    <!-- Mobile Navigation -->
+    <div class="mobile-navigation mobile-drawer" id="MobileNav">
+        <div style="height:100%;width: 100%;position: absolute;">
+            <img src="../assests/close.svg" alt="" class="closeNav" onclick="closeNav()">
+            <a href="../index.html" class="prataSerif h6 text-white"
+                style="position: absolute; left: 40px; top:20px;">Dhruv
+                Rathod</a>
+            <a href="../index.html" class="prataSerif text-white"
+                style="position: absolute; left: 40px; top:30%; font-size:40px;">Work</a>
+            <a href="../About.html" class="prataSerif text-white"
+                style="position: absolute; left: 40px; top:40%; font-size:40px;">About</a>
+        </div>
+    </div>
+    <!-- Ends Mobile Navigation -->
+    <!-- Navigation -->
+    <nav class="col-12 hidden d-flex justify-content-between desktop-navigation" style="position: fixed;" id="sideNav">
+        <div class="dhuvrathodvertical m-2 m-md-5">
+            <a href="./">
+                <img src="../assests/dhruvrathod.svg" class="workaboutlink" width="13">
+            </a>
+        </div>
+        <div class="m-2 m-md-5">
+            <a href="../index.html">
+                <img src="../assests/work.svg" class="workaboutlink" width="13" alt="">
+            </a>
+            <br>
+            <br>
+            <a href="../About.html">
+                <img src="../assests/about.svg" onclick="location.href='../About.html';" class="workaboutlink"
+                    width="13" alt="">
+            </a>
+        </div>
+    </nav>
+    <div class="m-3 m-md-5 mb-md-0 p-md-5 pt-md-0 pb-md-0 mb-0 pb-0">
+        <nav class="row justify-content-between navbar">
+            <div style="cursor: pointer;" onclick="location.href='../';" class="col ms-md-3" style="opacity: 0.8;">
+                Dhruv Rathod
+            </div>
+            <div class="col link-about d-flex flex-row-reverse me-md-3" style="opacity: 0.8;">
+                <a href="../index.html" class="ms-3 desktop-navigation">Work</a>
+                <a href="../About.html" class="ms-3 desktop-navigation">About</a>
+                <img src="../assests/menu.svg" onclick="openNavigation()" class="mobile-navigation" width="13">
+            </div>
+        </nav>
+    </div>
+    <!-- Ends Navigation -->
+    <main class="m-3 mt-3 p-md-5">
+        <div class="row project-heading row col-12 col-md-11 offset-md-2">
+            <div class="poppins500 title-project-heading h1 mt-3">
+                Yaantra
+            </div>
+            <div class="poppins300 desc-project-heading h6 mt-4 col-md-6" style="font-size:20px">
+                Yaantra: Leader in Multi-brand phone Repair,
+                Sale of Refurbished Phones and Signature Accessories
+            </div>
+            <div class="poppins300 desc-project-heading h6 mt-4 d-flex" style="font-size:13px;">
+                <div class="me-4">Branding</div>
+                <div class="me-4">Visual Design</div>
+                <div class="me-4">Art Direction</div>
+            </div>
+        </div>
+        <div class="project-images mt-4">
+            <div class="row col-12 col-md-10 offset-md-1">
+                <img src="./images/Yaantra_Image_1.jpg" class="img-fluid w-100" loading="lazy" alt="">
+            </div>
+            <div class="row col-12 col-md-10 offset-md-1">
+                <img src="./images/Yaantra_Image_3.jpg" class="img-fluid w-100" loading="lazy" alt="">
+            </div>
+            <div class="row col-12 col-md-10 offset-md-1">
+                <img src="./images/Yaantra_Image_2.jpg" class="img-fluid w-100" loading="lazy" alt="">
+            </div>
+            <div class="row col-12 col-md-10 offset-md-1 mt-5 pt-md-5 p-2 footer">
+                <div class="col-12 col-md-6 ms-0 me-0 text-white position-relative" style="background-color: #707070;">
+                    <div class="position-absolute top-50 start-0 translate-middle-y ms-5">
+                        <div class="poppins300 h6" style="opacity: 0.7;">
+                            Next Project
+                        </div>
+                        <div class="poppins600 h3">
+                            Baby's First Monsoon
+                        </div>
+                        <div class="poppins300 h6" style="opacity: 0.7;">
+                            SebaMed
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 ms-0 me-0 d-none d-md-block"
+                    style="background-image: url('https://source.unsplash.com/CEEhmAGpYzE'); background-size: cover; background-position: center;">
+                    <!-- asd -->
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <div onclick="topFunction()" class="hidden" id="js-top">
+        <img src="../assests/up-arrow.svg" height="30" alt="" />
+    </div>
+    <script src="../assests/script.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
