@@ -74,7 +74,7 @@
                 <div class="h4 poppins600">Web Design</div>
                 <div class="h4 poppins600">Digital Advertising</div>
             </div>
-            <div class="row col-12 col-md-8 mt-4 mt-md-0 poppins300 d-flex justify-content-between">
+            <div class="row col-12 col-md-8 mt-4 mt-md-0 poppins300 d-flex justify-content-between" style="z-index: 9;">
                 <p class="col-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                     incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco poriti laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -117,7 +117,8 @@
                     <b class="poppins600" style="font-size:20px">
                         What can i do for your buisness?
                     </b>
-                    <div class="alert alert-danger d-flex align-items-center mt-3 visually-hidden" id="formerror" role="alert">
+                    <div class="alert alert-danger d-flex align-items-center mt-3 visually-hidden" id="formerror"
+                        role="alert">
                         <div>
                             Server Error. Please Try again or Contact on above mentioned mobile number
                         </div>
@@ -203,8 +204,8 @@
                     toast.show()
                     form.reset()
                 }
-                
-                if(this.status != 200){
+
+                if (this.status != 200) {
                     var formerror = document.getElementById('formerror')
                     formerror.classList.remove('visually-hidden')
                     setTimeout(() => {
