@@ -62,7 +62,7 @@
     <main class="m-4 m-md-5 mb-md-0 mt-0 p-md-5 pt-md-3 mt-md-0 mb-0 pb-0">
         <div class="projects-home row mt-5 mb-5 p-md-3">
             <div class="col-12">
-                <img src="./assests/pexels-anthony-shkraba-4348401.jpg" class="img-fluid w-100" alt="" srcset="">
+                <img src="./assests/about-me.jpg" class="img-fluid w-100" alt="" srcset="">
             </div>
         </div>
         <div class="projects-home row mt-4 mb-5 p-md-3">
@@ -75,14 +75,24 @@
                 <div class="h4 poppins600">Digital Advertising</div>
             </div>
             <div class="row col-12 col-md-8 mt-4 mt-md-0 poppins300 d-flex justify-content-between" style="z-index: 9;">
-                <p class="col-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco poriti laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in uienply voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat norin proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti
-                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="col-12 italic">
+                    <p>
+                        Hey there! I'm Dhruv Rathod, and I know I can help your company create stunning visuals. As
+                        someone who has worked in marketing and graphic design for over 6+ years, I know what brands
+                        need to capture their audiences' attention. With my powerful design skills and knack for
+                        marketing, I have the right background for your brand's needs.
+                    </p>
+                    <p>
+                        While marketing and graphic design are my two passions, I also enjoy singing, playing a lot of
+                        video games and exploring the world. I am insanely curious about technology, so you'll also find
+                        me checking out various tech reviews.
+                    </p>
+                    <p>
+                        When you're ready for your brand to reach its next level of success, call or email me. I have
+                        the right tools and expertise to turn your brand into a household name. See it for yourself in
+                        my "work" section.
+                    </p>
+                </p>
                 <div class="col-auto mt-3">
                     <b class="poppins600">Email</b><br>
                     <span>rathoddhruvanil@gmail.com</span>
@@ -167,7 +177,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
             <div class="toast-body">
-                We will reach you soon
+                Thank you for sharing your details.<br>
+                We will get back to you shortly.
             </div>
         </div>
     </div>
@@ -185,8 +196,8 @@
             event.preventDefault();
             let formData = new FormData(event.target);
             html = ""
-            email = 'meet57.mp@gmail.com'
-            subject = "From Website"
+            email = 'rathoddhruvanil@gmail.com'
+            subject = "From Your Portfolio Website"
             for (let [name, value] of formData) {
                 html += `<tr><td><b> ${name} </b></td> : <td> ${value} </td> <br><tr>`
             }
